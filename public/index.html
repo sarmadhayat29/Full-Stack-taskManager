@@ -1,0 +1,38 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Full Stack Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p>designed by : Sarmad Hayat</p>
+        </header>
+
+        <main>
+            <section class="add-task-section">
+                <form id="task-form">
+                    <input type="text" id="task-input" placeholder="What needs to be done?" required autocomplete="off">
+                    <button type="submit" id="submit-btn">Add Task</button>
+                </form>
+                <div id="error-message" class="error hidden"></div>
+            </section>
+
+            <section class="task-list-section">
+                <ul id="task-list">
+                    <!-- Tasks will be dynamically injected here -->
+                    <li class="loading">Loading tasks...</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
